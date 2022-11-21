@@ -1,0 +1,38 @@
+#header {
+    position: relative;
+    background-color: #fff;
+    z-index: 2000;
+}
+
+#header .special_bg {
+    position: relative;
+    height: 160px;
+    background-color: gray;
+    border-bottom: 1px solid #e4e8eb;
+
+}
+
+#header .group_flex {
+    position: absolute;
+    background-color: white;
+    width: 830px;
+    height: 100%;
+    left: 50%;
+    margin: 0 0 0 -415px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .profile_box{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    left: 100%;
+    margin: 0 0 0 -300px;
+
+    background-color: yellow;
+
+
+}

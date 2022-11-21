@@ -200,3 +200,8 @@ summary {
     flex-wrap: nowrap;
     justify-content: flex-start;
 }
+
+.inner {
+    max-width: 1440px;
+    width: 100%;
+}

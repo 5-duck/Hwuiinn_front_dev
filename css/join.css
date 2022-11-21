@@ -1,0 +1,103 @@
+[type="email"],
+[type="text"],
+[type="password"] {
+    font-size: 18px;
+}
+
+.strong_color {
+    background-color:#ffa920;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    transition-duration: .3s;
+}
+.btn:hover {
+    
+}
+
+#join_form_container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.join_form_warp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    max-height: 800px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 42px;
+    margin: 60px 0;   
+}
+
+#form_sort_wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+    width: 100%;
+}
+
+#form_sort_wrap div {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    transition-duration: .3s;
+}
+#form_sort_wrap div:hover {
+    border: 1px solid #eee;
+    color: red;
+    border: 1px solid #ffa920;
+    background-color: black;
+}
+
+#form_sort_wrap #double_check_btn {
+    width: 100px;
+}
+
+#form_sort_wrap #email_container.flex #double_check_btn #double_check {
+    width: 100px;
+}
+
+#form_sort_wrap .btn_input {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;  
+}
+
+#form_sort_wrap div#join_btn {
+    width: 150px;
+}
+
+/* #form_sort_wrap div#join_btn > input, #form_sort_wrap div#email_container.flex input#double_check {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: #f2f2f2;
+} */
+
+#form_sort_wrap div {
+
+}

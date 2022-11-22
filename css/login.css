@@ -104,12 +104,12 @@ fieldset .find_wrap .find_id, fieldset .find_wrap .find_pw {
     width: 100%;
     height: 100%;
     padding: 3px 5px;
-    color: #a1a1a1;
+    color: #f2f2f2;
     transition-duration: .3s;
     /* background-color: #ffa920; */
 } 
 fieldset .find_wrap .find_id:hover, fieldset .find_wrap .find_pw:hover {
-    color: #f2f2f2;
+    color: #ffa920;
 }
 
 fieldset .find_wrap .find_id {

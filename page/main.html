@@ -94,7 +94,9 @@
     </section>
 
     <section id="post_container">
-        <a href="#Modal" title="글쓰기" target="_self" class="wirte_btn btn">글쓰기</a>
+        <div id="write_wrap">
+            <a href="#Modal" title="글쓰기" target="_self" class="wirte_btn btn">글쓰기</a>
+        </div>
         <div id="post_wrap">
             <div class="profile">
                 <a class="nickname" href="#" title="nickname" target="_blank">홍길동</a>
@@ -108,17 +110,19 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic debitis saepe expedita, totam veniam ipsam impedit laborum aspernatur provident, qui nisi repellendus? Dolore unde veniam impedit atque suscipit tempore dignissimos?
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic debitis saepe expedita, totam veniam ipsam impedit laborum aspernatur provident, qui nisi repellendus? Dolore unde veniam impedit atque suscipit tempore dignissimos?
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic debitis saepe expedita, totam veniam ipsam impedit laborum aspernatur provident, qui nisi repellendus? Dolore unde veniam impedit atque suscipit tempore dignissimos?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic debitis saepe expedita, totam veniam ipsam impedit laborum aspernatur provident, qui nisi repellendus? Dolore unde veniam impedit atque suscipit tempore dignissimos?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic debitis saepe expedita, totam veniam ipsam impedit laborum aspernatur provident, qui nisi repellendus? Dolore unde veniam impedit atque suscipit tempore dignissimos?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic debitis saepe expedita, totam veniam ipsam impedit laborum aspernatur provident, qui nisi repellendus? Dolore unde veniam impedit atque suscipit tempore dignissimos?
                     </div>
                 <div class="revise_wrap hide">
                     <input type="submit" value="수정" class="edit">
                     <input type="submit" value="삭제" class="cut">
                 </div>
-                <div>
-                    <!-- <input type="submit" value="글수정 완료"> -->
-                </div>
+                <!-- <div>
+                    <input type="submit" value="글수정 완료">
+                </div> -->
+                <textarea placeholder="댓글을 작성해주세요." class="comment"></textarea>
+                <input type="submit" value="등록" class="comment_btn">
+                <!-- <div id="write_wrap">
+                    <a href="#Modal" title="글쓰기" target="_self" class="wirte_btn btn">글쓰기</a>
+                </div> -->
             </form>
         </div>
     </section>

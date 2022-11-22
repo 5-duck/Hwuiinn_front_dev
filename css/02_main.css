@@ -10,7 +10,7 @@
 
 .text_box {
     max-width: 550px;
-    min-height: 500px;
+    min-height: 300px;
     width: 100%;
     height: 100%;
     display: block;
@@ -20,6 +20,7 @@
     /* border: none; */
     font-size: 18px;
     color: #333;
+    margin-bottom: 30px;
 }
 
 
@@ -259,11 +260,23 @@
     position: relative;
 }
 
-#post_container > .wirte_btn.btn {
+#post_container #write_wrap  {
+    position: relative;
+    top: 100px;
+    left: 0;
+    max-width: 600px;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    /* background-color: #ffa920; */
+    
+}
+
+#post_container #write_wrap > .wirte_btn.btn {
     display: block;
     position: absolute;
     top: 30px;
-    right: 26.5%;
+    right: 0%;
     width: 100px;
     height: 50px;
     font-size: 22px;
@@ -274,22 +287,23 @@
     border-radius: 10px;
     transition-duration: .3s;
 }
-#post_container > .wirte_btn.btn:hover {
+#post_container #write_wrap > .wirte_btn.btn:hover {
     border: 1px solid #ffa920;
     background-color: #ffa920;
     color: #f2f2f2
 }
 
 #post_container #post_wrap {
-    position: absolute;
+    position: relative;
     top: 100px;
     left: 50%;
     transform: translateX(-50%);
     max-width: 600px;
     width: 100%;
-    height: 1200px;
     border: 1px solid #000;
     border-radius: 15px;
+    margin-bottom: 200px;
+    /* background-color: aquamarine; */
 }
 
 #post_container #post_wrap .profile {
@@ -297,10 +311,8 @@
     top: 30px;
     left: 30px;
     display: inline-block;
-    max-width: 100px;
-    max-height: 100px;
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     background-image: url(../image/Keyword.png);
     background-position: center;
     background-size: cover;
@@ -352,10 +364,44 @@
     resize: none;
 }
 
+#post_container #post_wrap .comment {
+    max-width: 550px;
+    min-height: 150px;
+    width: 100%;
+    height: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #eee;
+    font-size: 16px;
+    color: #333;
+}
+
+#post_container #post_wrap .comment_btn {
+    display: inline-block;
+    /* width: 100%; */
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    transition-duration: .3s;
+}
+
+#post_container #post_wrap .comment_btn:hover {
+    background-color: #ffa920;
+    color: #f2f2f2;
+}
+
 #post_container #post_wrap #post_form .revise_wrap{
     width: 100%;
     height: 100%;
     text-align: right;
+    margin-bottom: 20px;
 }
 
 #post_container #post_wrap #post_form .revise_wrap input {    

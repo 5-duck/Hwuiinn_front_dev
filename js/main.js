@@ -1,6 +1,6 @@
 import { authService } from "./firebase.js";
 import { handleLocation, route } from "./router.js";
-import { openModal, closeModal } from "./modal.js";
+import { openModal, closeModal, dropdown, showMenu } from "./modal.js";
 
 // hash url 변경 시 처리
 window.addEventListener("hashchange", handleLocation);
@@ -14,10 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     handleLocation();
     if (user) {
       // 로그인 상태인 경우
-      alert("로그인 상태입니다.");
     } else {
       // 로그아웃 상태인 경우
-      alert("로그아웃 상태입니다.");
     }
   });
 });
@@ -26,3 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
 window.route = route;
 window.openModal = openModal;
 window.closeModal = closeModal;
+window.dropdown = dropdown;
+window.showMenu = showMenu;

@@ -1,6 +1,6 @@
 import { authService } from "./firebase.js"; // 상대경로 지정
 import { handleLocation, route } from "./router.js"; // 상대경로 지정
-import { OpenBtn, modal, overlay, closeBtn, show, hide } from "./js/modal.js";
+// import { OpenBtn, modal, overlay, closeBtn, show, hide } from "./js/modal.js";
 
 // hash url 변경 시 처리
 window.addEventListener("hashchange", handleLocation);

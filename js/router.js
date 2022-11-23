@@ -8,7 +8,8 @@
     "/": "/page/main.html",
     login: "/page/login.html",
     join: "/page/join.html",
-    Modal: "/page/Modal.html",
+    modal: "/page/modal.html",
+    mypage: "/page/mypage.html",
     404: "/page/404.html",
     };
 
@@ -19,7 +20,7 @@
     if (path.length == 0) {
         path = "/";
     }
-    const route = routes[path] || routes[404]; // truthy 하면 route[path], falsy 하면 routes[404]
+    const route = routes[path] || routes[404];// truthy 하면 route[path], falsy 하면 routes[404]
 
     const html = await fetch(route).then((data) => data.text());
 
@@ -27,3 +28,5 @@
     };
 
     // path 경로에 따라 <head> <title> 해당 페이지에 맞게 변경되게끔 하기 </title></head>
+    
+

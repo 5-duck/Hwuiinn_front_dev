@@ -77,7 +77,7 @@
 
         <!-- <div class="modal hidden"> -->
         <div class="modal hidden">
-          <div class="modal_overlay"></div>
+          <div class="modal_overlay" onclick="closeModal()"></div>
           <div class="modal_content">
             <div class="modal_box">
               <div class="modal_header">뉴스피드 등록</div>
@@ -98,19 +98,19 @@
                   >
                 </button>
                 <div class="dropdown-content">
-                  <div class="fastfood" onclick="showMenu(this.innerText)">#운동</div>
-                  <div class="fastfood" onclick="showMenu(this.innerText)">
+                  <div class="drop_keyword" onclick="showMenu(this.innerText)">#운동</div>
+                  <div class="drop_keyword" onclick="showMenu(this.innerText)">
                     #개발공부
                   </div>
-                  <div class="fastfood" onclick="showMenu(this.innerText)">#카페</div>
-                  <div class="fastfood" onclick="showMenu(this.innerText)">
+                  <div class="drop_keyword" onclick="showMenu(this.innerText)">#카페</div>
+                  <div class="drop_keyword" onclick="showMenu(this.innerText)">
                     #인스턴트
                   </div>
-                  <div class="fastfood" onclick="showMenu(this.innerText)">#게임</div>
-                  <div class="fastfood" onclick="showMenu(this.innerText)">
+                  <div class="drop_keyword" onclick="showMenu(this.innerText)">#게임</div>
+                  <div class="drop_keyword" onclick="showMenu(this.innerText)">
                     #오둥이
                   </div>
-                  <div class="fastfood" onclick="showMenu(this.innerText)">#기타</div>
+                  <div class="drop_keyword" onclick="showMenu(this.innerText)">#기타</div>
                 </div>
               </div>
               <div class="modal_user">
@@ -124,7 +124,7 @@
               </div>
               <div class="btn_box">
                 <button class="com_btn">게시</button>
-                <button class="close_modal close_btn">닫기</button>
+                <button class="close_modal close_btn" onclick="closeModal()">닫기</button>
               </div>
             </div>
           </div>

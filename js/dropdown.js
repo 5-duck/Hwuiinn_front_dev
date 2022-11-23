@@ -24,7 +24,7 @@ window.onload = () => {
     dropbtn.style.borderColor = "#3992a8";
   };
 };
-window.onclick = (e) => {
+window.onclick = (event) => {
   if (!e.target.matches(".dropbtn_click")) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
 

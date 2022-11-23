@@ -4,13 +4,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0.4);
 }
 .hidden {
@@ -28,9 +27,9 @@ body {
   top: 50%;
   left: 50%;
 
-  width: 450px;
-  height: 450px;
-  padding: 40px;
+  width: 500px;
+  height: 500px;
+  padding: 30px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -54,7 +53,8 @@ body {
   width: 350px;
   height: 30px;
   top: 30px;
-  left: 50px;
+  left: 50%;
+  translate: -50% 0;
   /* background-color: yellow; */
 }
 .modal_user {
@@ -91,7 +91,9 @@ body {
   width: 100%;
   height: 200px;
   top: 180px;
-  left: -3px;
+  left: 50%;
+  translate: -50% 0;
+  text-align: left;
   border: 1px solid #eee;
 }
 .btn_box {

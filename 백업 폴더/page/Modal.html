@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/modal.css" type="text/css">
+    <link rel="stylesheet" href="../css/dropdown.css" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Modal</title>
+</head>
+
+<body>
+    <!-- <div class="modal hidden"> -->
+    <div class="modal">
+        <div class="modal_overlay"></div>
+        <div class="modal_content">
+            <div class="modal_box">
+                <div class="modal_header">뉴스피드 등록</div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <span class="dropbtn_icon">more_horiz</span>
+                        <span class="dropbtn_content">#keyword...</span>
+                        <span class="dropbtn_click"
+                            style="font-family: Material Icons; font-size : 16px; color : #3b3b3b; float:right;"
+                            onclick="dropdown()">arrow_drop_down</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="fastfood" onclick="showMenu(this.innerText)">#운동</div>
+                        <div class="fastfood" onclick="showMenu(this.innerText)">#개발공부</div>
+                        <div class="fastfood" onclick="showMenu(this.innerText)">#카페</div>
+                        <div class="fastfood" onclick="showMenu(this.innerText)">#인스턴트</div>
+                        <div class="fastfood" onclick="showMenu(this.innerText)">#게임</div>
+                        <div class="fastfood" onclick="showMenu(this.innerText)">#오둥이</div>
+                        <div class="fastfood" onclick="showMenu(this.innerText)">#기타</div>
+                    </div>
+                </div>
+                <div class="modal_user">
+                    <div class="modal_user_box">
+                        <div class="modal_user_pic">
+                        </div>
+                        <div class="modal_user_nickname">nickname</div>
+                    </div>
+                </div>
+                <div>
+                    <textarea class="modal_textarea"></textarea>
+                </div>
+                <div class="btn_box">
+                    <button class="com_btn">게시</button>
+                    <button class="close_modal close_btn">닫기</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <button class="open_modal">Modal 띄우기</button> -->
+
+    <script src="../js/newsfeed_modal/dropdown.js"></script>
+    <script src="../js/newsfeed_modal/dropdown.js"></script>
+</body>
+
+</html>

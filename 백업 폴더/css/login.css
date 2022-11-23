@@ -43,7 +43,7 @@ body {
 
 #login_title {
     text-align: center;
-    font-size: 2.65rem;
+    font-size: 2.25rem;
     padding: 50px 0 75px 0;
     color: #f2f2f2;
 }
@@ -94,6 +94,33 @@ fieldset .checkbox_wrap {
     color: #f2f2f2;
 }
 
+fieldset .find_wrap {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 아이디 찾기, 비밀번호 찾기 공통속성. */
+fieldset .find_wrap .find_id, fieldset .find_wrap .find_pw {
+    width: 100%;
+    height: 100%;
+    padding: 3px 5px;
+    color: #f2f2f2;
+    transition-duration: .3s;
+    /* background-color: #ffa920; */
+} 
+fieldset .find_wrap .find_id:hover, fieldset .find_wrap .find_pw:hover {
+    color: #ffa920;
+}
+
+fieldset .find_wrap .find_id {
+    margin-right: 5px;
+}
+
+fieldset .find_wrap .find_pw {
+    margin-left: 5px;
+}
+
+
 #login_submit {
     display: block;
     margin: 0 auto;
@@ -104,7 +131,7 @@ fieldset .checkbox_wrap {
     font-family: 'Open';
     font-size: 1.25rem;
     /* value속성이 font로 인식된다. 처음 알았음. */
-    font-weight: bold;
+    font-weight: 500;
     background-color: #f2f2f2;
     transition-duration: .3s;
 /* 사진 컨텐츠 위치 */
@@ -122,7 +149,7 @@ fieldset .checkbox_wrap {
 }
 
 .simple_login_title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
     color: #f2f2f2;
     margin-bottom: 20px;

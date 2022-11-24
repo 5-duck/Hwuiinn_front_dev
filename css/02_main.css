@@ -38,7 +38,7 @@
     width: 100%;
     max-height: 150px;
     height: 100%;
-    /* background-color: pink; */
+    background-color: #d1d1d1;
     border-bottom: 1px solid #e4e8eb;
     display: grid;
     grid-template-columns: 18% 64% 18%;
@@ -106,14 +106,45 @@
     height: 64px;
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid red;
-    margin-right: 20px;
+    border: 1px solid #eee;
+    margin-right: 30px;
+    transition-duration: .3s;
 }
-#header .profile_img{
-    width: 100%;
+
+#header .profile_circle:hover {
+    box-shadow: 2px 4px 3px #333;   
+}
+
+#header .profile_circle a {
+    position: relative;
+    display: block;
+    width:100%;
     height: 100%;
-    object-fit: cover;
+    transition-duration: .3s;
+    
+    /* background-color: #ffa920 */
 }
+
+/* #header .profile_circle a:hover {
+    
+} */
+
+#header .profile_circle a:hover i {
+    color: #ffa920;
+}
+
+#header .profile_circle a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    object-fit: cover;
+    text-align: center;
+    color: #f2f2f2;
+    transition-duration: .3s;
+}
+
 
 /* ------------------------------------sidebar 시작 */
 #sidebar {
